@@ -7,11 +7,13 @@ public class jonathan5 {
         System.out.print("Digíte um caracter qualquer:");
         String caracter = sc.nextLine() ;
 
-        String vogal = "a";
+        char letra = caracter.charAt(0) ;
 
-        if (caracter == vogal){
-            System.out.print("É uma vogal");
+        if ((caracter.equals("a")) || (caracter.equals("e")) || (caracter.equals("i")) || (caracter.equals("o")) || (caracter.equals("u"))){
+            System.out.println("Vogal");
         }
-
+        else {
+            System.out.print("É uma consoante");
+        }
     }
 }
