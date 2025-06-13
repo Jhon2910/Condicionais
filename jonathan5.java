@@ -4,18 +4,21 @@ public class jonathan5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-            System.out.print("Digíte uma caracter qualquer:");
-            String caracter = sc.nextLine();
+            System.out.print("Digite um caracter qualquer:");
+            String c = sc.nextLine();
 
-            if (caracter.length() != 1){
+            if (c.length() != 1){
                 System.out.println("Digite apenas um caracter!");
             }
             else {
-                if ((caracter.equals("a")) || (caracter.equals("e")) || (caracter.equals("i")) || (caracter.equals("o")) || (caracter.equals("u"))) {
+                char caracter = Character.toLowerCase(c.charAt(0));
+
+                if ((caracter == 'a') || (caracter == 'e') || ((caracter == 'i') || (caracter == 'o') || (caracter == 'u'))) {
                     System.out.println("É uma Vogal!");
                 } else {
                     System.out.print("Não é uma Vogal!");
                 }
             }
+            sc.close();
     }
 }
