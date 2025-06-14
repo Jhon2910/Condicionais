@@ -11,21 +11,22 @@ public class jonathan8 {
             double x = sc.nextDouble();
 
             if (x <= 1 ) {
-                System.out.print(1);
+                System.out.println("F(X) = " + 1);
             }
             else if (x > 1 && x <= 2) {
-                System.out.print(2);
+                System.out.println("F(X) = " + 2);
             }
             else if (x > 2 && x <= 3) {
-                System.out.print(Math.pow(x,2));
+                System.out.println("F(X) = " + Math.pow(x,2));
             }
             else if (x > 3) {
-                System.out.print(Math.pow(x,3));
+                System.out.println("F(X) = " + Math.pow(x,3));
             }
         }
         else  {
             System.out.println("Digite apenas numeros reais!");
         }
+
         sc.close();
     }
 }
