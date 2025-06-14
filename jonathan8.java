@@ -19,7 +19,7 @@ public class jonathan8 {
             else if (x > 2 && x <= 3) {
                 System.out.println("F(X) = " + Math.pow(x,2));
             }
-            else if (x > 3) {
+            else {
                 System.out.println("F(X) = " + Math.pow(x,3));
             }
         }
