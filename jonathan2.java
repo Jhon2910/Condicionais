@@ -7,20 +7,22 @@ public class jonathan2 {
         System.out.print("Digite um número: ");
 
         if (sc.hasNextInt()) {
+
             int n = sc.nextInt();
+
             int resto = n % 2;
 
             if (resto == 0) {
-                System.out.print("O número que voce digitou é par!");
+                System.out.println("O número que você digitou é par!");
             }
             else {
-                System.out.print("O númeero que voce digitou é impar!");
+                System.out.println("O número que voce digitou é impar!");
             }
         }
 
         else {
-            System.out.print("Digite apenas números!");
+            System.out.println("Digite apenas números inteiros!");
         }
-            sc.close();
+        sc.close();
     }
 }
