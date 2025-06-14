@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class jonathan3 {
+public class jonathan4 {
     public static void main(String[]args){
         double num1,num2, rest;
         char op;
