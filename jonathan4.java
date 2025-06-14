@@ -6,26 +6,28 @@ public class jonathan3 {
         char op;
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Digite dois numeros:");
+        System.out.println("Digite dois numeros:");
+
+        if (sc.hasNextDouble()){
 
         num1 = sc.nextDouble();
         num2 = sc.nextDouble();
         sc.nextLine();
 
-        System.out.println("Menu:\n + :soma\n- :subtração\n* :multiplicação\n/ :divisão\nEscolha:");
+        System.out.println("Menu:\n+ :Soma\n- :Subtração\n* :Multiplicação\n/ :Divisão\nEscolha:");
         op = sc.nextLine().charAt(0);
         switch (op){
             case '+':
                 rest = num1+num2;
-                System.out.println("soma = "+ rest);
+                System.out.println("soma = \n"+ rest);
                 break;
             case '-':
                 rest = num1-num2;
-                System.out.println("subtrção = "+ rest);
+                System.out.println("subtração =  \n"+ rest);
                 break;
             case '*':
                 rest = num1*num2;
-                System.out.println("multiplicação = "+ rest);
+                System.out.println("multiplicação = \n"+ rest);
                 break;
             case '/':
                 if (num2==0){
@@ -33,11 +35,15 @@ public class jonathan3 {
                 }
                 else {
                     rest = num1/num2;
-                    System.out.println("divisão = "+ rest);
+                    System.out.println("divisão = \n"+ rest);
                 }
                 break;
             default:
                 System.out.print("operação inválida!");
+        }
+        }
+        else {
+            System.out.println("Digite apenas números!");
         }
         sc.close();
     }
