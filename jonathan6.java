@@ -8,6 +8,7 @@ public class jonathan6 {
 
         if (sc.hasNextDouble()) {
             double salario = sc.nextDouble();
+            sc.nextLine();
             double aumento30porcento = salario * 0.30;
             double aumento10porcento = salario * 0.10;
 
@@ -21,7 +22,7 @@ public class jonathan6 {
             }
         }
         else {
-            System.out.print("Digite apenas números com até 2 casas decimais!\nexemplo: 500.00");
+            System.out.println("Digite apenas números com até 2 casas decimais!\nexemplo: 500.00");
         }
         sc.close();
     }
