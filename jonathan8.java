@@ -5,8 +5,7 @@ public class jonathan8 {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Digite um valor: ");
-
-
+        
         if (sc.hasNextDouble()) {
             double x = sc.nextDouble();
 
