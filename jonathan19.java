@@ -32,7 +32,7 @@ public class jonathan19 {
                     double gratificacao = 0.30 * SalarioBase ;
                 }
             }
-            else if (SalarioBase < 500){
+            else {
                 if (tempo<3){
                     double gratificacao = 0.23 * SalarioBase;
                 }
@@ -43,9 +43,7 @@ public class jonathan19 {
                     double gratificacao = 0.33 ;
                 }
             }
-            else {
-                SalarioBase - imposto + gratificacao;
-            }
+           
        }
        else {
            System.out.println("Digite apenas números!");
