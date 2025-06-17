@@ -34,7 +34,13 @@ public class jonathan19 {
             }
             else if (SalarioBase < 500){
                 if (tempo<3){
-                    double gratificacao = ;
+                    double gratificacao = 0.23 * SalarioBase;
+                }
+                else if (tempo > 3 && tempo < 6){
+                    double gratificacao = 0.35;
+                }
+                else {
+                    double gratificacao = 0.33 ;
                 }
             }
 
