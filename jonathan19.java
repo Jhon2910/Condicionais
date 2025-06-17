@@ -43,10 +43,10 @@ public class jonathan19 {
                     double gratificacao = 0.33 ;
                 }
             }
-
        }
        else {
            System.out.println("Digite apenas números!");
        }
+       sc.close();
     }
 }
