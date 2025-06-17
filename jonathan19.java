@@ -8,8 +8,8 @@ public class jonathan19 {
         System.out.print("Digite o tempo de serviço(anos): ");
 
        if (sc.hasNextDouble()){
-        Double SalarioBase = sc.nextDouble();
-        Double tempo = sc.nextDouble();
+        double SalarioBase = sc.nextDouble();
+        double tempo = sc.nextDouble();
 
             if (SalarioBase < 200){
                 double imposto=0;
@@ -42,6 +42,9 @@ public class jonathan19 {
                 else {
                     double gratificacao = 0.33 ;
                 }
+            }
+            else {
+                SalarioBase - imposto + gratificacao;
             }
        }
        else {
