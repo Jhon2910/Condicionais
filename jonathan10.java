@@ -10,6 +10,9 @@ public class jonathan10 {
             double peso = sc.nextInt();
 
             System.out.print("Digite sua altura (em metros): ");
+
+            if (sc.hasNextDouble()){
+
             double altura = sc.nextInt();
 
             double imc = peso/(Math.pow(altura,2)) ;
@@ -36,4 +39,4 @@ public class jonathan10 {
             System.out.println("Digite apenas numeros!");
         }
     }
-}
+}}
