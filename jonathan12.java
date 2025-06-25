@@ -34,7 +34,7 @@ public class jonathan12{
                                 if (mesVotacao < mesNascimento || (mesVotacao == mesNascimento && diaVotacao < diaNascimento)) {
                                     idade--;
                                 }
-                                
+
                                 System.out.printf("Idade na data da votação: %d anos.\n", idade);
                                 System.out.print("Situação de voto: ");
 
@@ -47,22 +47,22 @@ public class jonathan12{
                                 }
 
                             } else {
-                                System.out.println("Erro: O dia de nascimento deve ser um número inteiro.");
+                                System.out.println("O dia de nascimento deve ser um número inteiro.");
                             }
                         } else {
-                            System.out.println("Erro: O mês de nascimento deve ser um número inteiro.");
+                            System.out.println("O mês de nascimento deve ser um número inteiro.");
                         }
                     } else {
-                        System.out.println("Erro: O ano de nascimento deve ser um número inteiro.");
+                        System.out.println("O ano de nascimento deve ser um número inteiro.");
                     }
                 } else {
-                    System.out.println("Erro: O dia da votação deve ser um número inteiro.");
+                    System.out.println("O dia da votação deve ser um número inteiro.");
                 }
             } else {
-                System.out.println("Erro: O mês da votação deve ser um número inteiro.");
+                System.out.println("O mês da votação deve ser um número inteiro.");
             }
         } else {
-            System.out.println("Erro: O ano da votação deve ser um número inteiro.");
+            System.out.println("O ano da votação deve ser um número inteiro.");
         }
 
         sc.close();
