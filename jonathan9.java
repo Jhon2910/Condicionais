@@ -4,16 +4,14 @@ public class jonathan9 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        double a, b, c, delta, r1, r2;
+        double a = 0, b = 0, c = 0, delta, r1, r2;
 
         System.out.print("Digite o coeficiente a: ");
         if (sc.hasNextDouble()) {
             a = sc.nextDouble();
         }
         else {
-            System.out.println("Entrada inválida. Digite um número.");
-            sc.close();
-            return;
+            System.out.println("Digite um número.");
         }
 
         System.out.print("Digite o coeficiente b: ");
@@ -21,24 +19,22 @@ public class jonathan9 {
             b = sc.nextDouble();
         }
         else {
-            System.out.println("Entrada inválida. Digite um número.");
-            sc.close();
-            return;
+            System.out.println("Digite um número.");
         }
+
         System.out.print("Digite o coeficiente c: ");
         if (sc.hasNextDouble()) {
             c = sc.nextDouble();
         }
         else {
-            System.out.println("Entrada inválida. Digite um número.");
-            sc.close();
-            return;
+            System.out.println("Digite um número.");
+            sc.next();
         }
+        
         if (a == 0) {
             if (b == 0) {
                 System.out.println("Não é uma equação válida.");
-            }
-            else {
+            } else {
                 r1 = -c / b;
                 System.out.printf("Equação de 1º grau. Raiz: %.2f%n", r1);
             }
@@ -59,7 +55,5 @@ public class jonathan9 {
                 System.out.printf("A equação possui duas raízes reais: r1 = %.2f, r2 = %.2f%n", r1, r2);
             }
         }
-
-        sc.close();
     }
 }
