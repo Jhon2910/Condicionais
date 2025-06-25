@@ -46,22 +46,28 @@ public class jonathan12{
                                     System.out.println("Voto Facultativo.");
                                 }
 
-                            } else {
+                            }
+                            else {
                                 System.out.println("O dia de nascimento deve ser um número inteiro.");
                             }
-                        } else {
+                        }
+                        else {
                             System.out.println("O mês de nascimento deve ser um número inteiro.");
                         }
-                    } else {
+                    }
+                    else {
                         System.out.println("O ano de nascimento deve ser um número inteiro.");
                     }
-                } else {
+                }
+                else {
                     System.out.println("O dia da votação deve ser um número inteiro.");
                 }
-            } else {
+            }
+            else {
                 System.out.println("O mês da votação deve ser um número inteiro.");
             }
-        } else {
+        }
+        else {
             System.out.println("O ano da votação deve ser um número inteiro.");
         }
 
